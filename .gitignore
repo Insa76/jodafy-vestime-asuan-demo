@@ -1,0 +1,49 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+.venv/
+venv/
+
+# Herramientas y pruebas
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Variables de entorno y secretos
+.env
+.env.*
+!.env.example
+
+# Sistema operativo y editores
+.DS_Store
+Thumbs.db
+.vscode/
+
+@'
+
+# Dependencias de Node.js
+node_modules/
+
+# Metadatos generados por Python
+*.egg-info/
+'@ | Add-Content .gitignore
+
+# Artefactos de compilacion
+/backend/build/
+/backend/dist/
+/desktop/dist/
+
+# Datos y estado local de NEXUS
+/backend/nexus.db
+/backend/nexus_learning.json
+/backend/nexus_memory.json
+/backend/nexus_logs.txt
+
+# Modelo binario local
+/backend/yolov8n.pt
