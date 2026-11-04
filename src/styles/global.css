@@ -201,7 +201,13 @@
 .vestime-countdown-section {
   padding: 75px 24px 80px;
   text-align: center;
-  background: #292722;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(25, 15, 22, 0.38),
+      rgba(25, 15, 22, 0.52)
+    ),
+    url('/images/vestime-countdown-test.jpg') center center / cover no-repeat;
   color: #fff;
 }
 
