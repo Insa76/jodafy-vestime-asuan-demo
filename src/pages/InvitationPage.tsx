@@ -1,10 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
 import {
-  ArrowLeft,
   CalendarDays,
   Heart,
   MapPin,
-  Share2,
   Shirt,
   Sparkles,
 } from 'lucide-react'
@@ -75,45 +73,8 @@ export function InvitationPage() {
     return () => window.clearInterval(interval)
   }, [])
 
-  async function shareInvitation() {
-    const url = window.location.href
-
-    if (navigator.share) {
-      try {
-        await navigator.share({
-          title: 'SUNSET 15 AÑOS · Vestime Asuan',
-          text: '¡Cumplimos 15 años y queremos celebrarlo con vos!',
-          url,
-        })
-      } catch {
-        // El usuario puede cerrar el diálogo sin compartir.
-      }
-
-      return
-    }
-
-    try {
-      await navigator.clipboard.writeText(url)
-      window.alert('Enlace copiado. Ya podés compartirlo por WhatsApp.')
-    } catch {
-      window.prompt('Copiá el enlace para compartir la invitación:', url)
-    }
-  }
-
   return (
     <main className="invitation-page vestime-public-invitation">
-      <div className="invite-topbar">
-        <a href="/">
-          <ArrowLeft size={16} />
-          Jodafy
-        </a>
-
-        <button type="button" onClick={() => void shareInvitation()}>
-          <Share2 size={16} />
-          Compartir
-        </button>
-      </div>
-
       <section
         className="invite-cover"
         style={{
@@ -254,14 +215,6 @@ export function InvitationPage() {
           Te esperamos para compartir una tarde muy especial.
         </p>
 
-        <button
-          type="button"
-          className="button button-dark"
-          onClick={() => void shareInvitation()}
-        >
-          <Share2 size={16} />
-          Compartir invitación
-        </button>
       </section>
 
       <footer className="invite-footer">
