@@ -116,7 +116,7 @@ export function InvitationPage() {
 
         <p>
           Sos parte de nuestra historia y queremos compartir este
-          momento tan especial con todas nuestras clientas.
+          momento tan especial juntos.
         </p>
 
         <div className="invite-divider">✳</div>
