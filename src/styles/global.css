@@ -505,3 +505,27 @@
 .vestime-public-invitation .vestime-final-message h2 {
   font-weight: 400;
 }
+
+/* Firma de desarrollo en la invitación pública */
+.vestime-public-invitation .invite-credit {
+  display: block;
+  margin-top: 28px;
+  color: #aaa79e;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+
+.vestime-public-invitation .invite-credit a {
+  color: #a66b43;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.vestime-public-invitation .invite-credit a:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
