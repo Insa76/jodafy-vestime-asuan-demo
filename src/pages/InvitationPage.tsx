@@ -227,6 +227,18 @@ export function InvitationPage() {
         <span>
           15 AÑOS · 2026
         </span>
+
+        <small className="invite-credit">
+          Desarrollado por{' '}
+          <a
+            href="https://www.instagram.com/die_goinsa/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Instagram de die_goinsa"
+          >
+            @die_goinsa
+          </a>
+        </small>
       </footer>
     </main>
   )
