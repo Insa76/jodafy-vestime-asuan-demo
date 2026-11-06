@@ -58,7 +58,7 @@ export const demoInvitation: Invitation = {
   message:
     'POR 15 AÑOS HACIENDO LO QUE AMAMOS. Sos parte de nuestra historia y queremos invitarte para festejarlo juntos.',
 
-  coverImage: '/images/VA.jpg',
+  coverImage: '/images/VA1.jpg',
 
   mapUrl:
     'https://www.google.com/maps/search/?api=1&query=Frondizi+286+Resistencia+Chaco',
